@@ -33,12 +33,14 @@ const App = () => {
       <Link className='text-blue-500 mr-5 text-sm' to='/agence'>Agence</Link>
       <Link className='text-blue-500 mr-5 text-sm' to='/projects'>Projects</Link> */}
 
-      <div className='h-screen w-full flex fixed z-100 top-0'>
+      <div className='h-screen w-full fixed z-100 top-0'>
+        <div className='h-full w-full flex '>
         <div className='stair h-full w-1/5 bg-black'></div>
         <div className='stair h-full w-1/5 bg-black'></div>
         <div className='stair h-full w-1/5 bg-black'></div>
         <div className='stair h-full w-1/5 bg-black'></div>
         <div className='stair h-full w-1/5 bg-black'></div>
+      </div>
       </div>
 
       <Routes>
