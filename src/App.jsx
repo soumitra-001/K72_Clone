@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Agence from './pages/Agence'
@@ -8,10 +8,15 @@ import gsap from 'gsap'
 
 const App = () => {
 
+  const stairParentRef = useRef(null)
+
   useGSAP(function(){
 
     const tl = gsap.timeline()
 
+    tl.to(stairParentRef.current,{
+      display:'block',
+    })
     tl.from('.stair',{
       height:0,
       stagger:{
@@ -24,6 +29,12 @@ const App = () => {
         amount:-0.3
       }
     })
+    tl.to(stairParentRef.current,{
+      display:'none',
+    })
+    tl.to('.stair',{
+      y:'0%',
+    })
   })
 
   return (
@@ -33,7 +44,7 @@ const App = () => {
       <Link className='text-blue-500 mr-5 text-sm' to='/agence'>Agence</Link>
       <Link className='text-blue-500 mr-5 text-sm' to='/projects'>Projects</Link> */}
 
-      <div className='h-screen w-full fixed z-100 top-0'>
+      <div ref={stairParentRef} className='h-screen w-full fixed z-100 top-0'>
         <div className='h-full w-full flex '>
         <div className='stair h-full w-1/5 bg-black'></div>
         <div className='stair h-full w-1/5 bg-black'></div>
