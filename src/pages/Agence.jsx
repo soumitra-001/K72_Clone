@@ -32,7 +32,7 @@ const Agence = () => {
     gsap.to(imageDivRef.current,{
       scrollTrigger:{
         trigger:imageDivRef.current,
-        markers:true,
+        //markers:true,
         start:'top 28%',
         end:'top -100%',
         pin:true,
@@ -55,8 +55,8 @@ const Agence = () => {
 
   return (
     <div className='parent text-black'>
-      <div id='page1' className='py-1 '>
-        <div ref={imageDivRef} className='absolute overflow-hidden lg:h-[20vw] h-[30vw] lg:rounded-3xl rounded-xl lg:w-[15vw] w-[25vw] lg:top-96 -top-80 lg:left-[30vw] left-[30vw]'>
+      <div id='page1' className='py-1'>
+        <div ref={imageDivRef} className='absolute overflow-hidden lg:h-[20vw] h-[30vw] lg:rounded-3xl rounded-xl lg:w-[15vw] w-[25vw] lg:top-96 top-80 lg:left-[30vw] left-[30vw]'>
           <img ref={imageRef} className='h-full object-cover w-full' src={Carl} alt="" />
         </div>
         <div className='relative Lausanne500'>
