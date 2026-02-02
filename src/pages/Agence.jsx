@@ -68,7 +68,7 @@ const Agence = () => {
           </div>
         </div>
       </div>
-      <div id='page2' className=" h-screen">
+      <div id='page2' className=" h-screen w-screen">
 
       </div>
     </div>
