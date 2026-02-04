@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Agence from './pages/Agence'
 import Projects from './pages/Projects'
 import Navbar from './components/Navigation/Navbar'
+import FullScreenNav from './components/Navigation/FullScreenNav'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Link className='text-blue-500 mr-5 text-sm' to='/projects'>Projects</Link> */}
 
         <Navbar />
+        <FullScreenNav />
 
       <Routes>
         <Route path='/' element={<Home />} />
