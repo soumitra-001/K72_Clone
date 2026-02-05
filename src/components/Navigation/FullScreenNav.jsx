@@ -1,16 +1,14 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import { NavbarContext } from '../../context/NavContext'
+import { NavBarContext } from '../../context/NavContext'
+
 
 const FullScreenNav = () => {
     const fullNavLinksRef = useRef(null)
     const fullScreenRef = useRef(null)
 
-    const [navOpen, setNavOpen] = useContext(NavbarContext)
-
-
-
+   const [navOpen, setNavOpen] = useContext(NavBarContext)
 
 
     function gsapAnimation() {
@@ -101,7 +99,7 @@ const FullScreenNav = () => {
                 </div>
                 <div className=' py-36'>
                     <div className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Projets</h1>
+                        <h1 className='font-[Lausanne500] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Projets</h1>
                         <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
@@ -119,7 +117,7 @@ const FullScreenNav = () => {
 
                     </div>
                     <div className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Agence</h1>
+                        <h1 className='font-[Lausanne500] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Agence</h1>
                         <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
@@ -137,7 +135,7 @@ const FullScreenNav = () => {
 
                     </div>
                     <div className='link origin-top relative border-t-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Contact</h1>
+                        <h1 className='font-[Lausanne500] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Contact</h1>
                         <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
@@ -155,7 +153,7 @@ const FullScreenNav = () => {
 
                     </div>
                     <div className='link origin-top relative border-y-1 border-white'>
-                        <h1 className='font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Blogs</h1>
+                        <h1 className='font-[Lausanne500] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase'>Blogs</h1>
                         <div className='moveLink absolute text-black flex top-0 bg-[#D3FD50]'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
